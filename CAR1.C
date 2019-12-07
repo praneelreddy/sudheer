@@ -1,0 +1,49 @@
+#include<stdio.h>
+#include<conio.h>
+#include<graphics.h>
+void main()
+{
+ int gd=EGA,gm=EGAHI;
+ initgraph(&gd,&gm,"C:\\TURBOC3\\bgi");
+ setcolor(WHITE);
+ settextstyle(3,0,5);
+ outtextxy(150,30,"select a car ->");
+ rectangle(250,190,380,230);
+ line(260,225,370,225);
+ line(250,190,270,150);
+ line(270,150,360,150);
+ line(360,150,380,190);
+ circle(270,210,10);
+ circle(360,210,10);
+ ellipse(315,170,0,360,45,10);
+ line(270,150,280,140);
+ line(280,140,350,140);
+ line(350,140,360,150);
+ line(295,200,335,200);
+ line(295,200,305,220);
+ line(305,220,325,220);
+ line(325,220,335,200);
+ line(246,230,246,250);
+ line(270,230,270,250);
+ arc(258,250,180,360,12);
+ arc(249,230,90,180,3);
+ line(384,230,384,250);
+ line(360,230,360,250);
+ arc(372,250,180,360,12);
+ arc(381,230,0,90,3);
+ setfillstyle(1,RED);
+ floodfill(251,191,WHITE);
+ setfillstyle(1,YELLOW);
+ floodfill(271,211,WHITE);
+ floodfill(361,211,WHITE);
+ setfillstyle(1,RED);
+ floodfill(271,151,WHITE);
+ setfillstyle(1,WHITE);
+ floodfill(316,171,WHITE);
+ setfillstyle(1,RED);
+ floodfill(278,149,WHITE);
+ setfillstyle(1,WHITE);
+ floodfill(310,219,WHITE);
+ delay(50);
+ getch();
+}
